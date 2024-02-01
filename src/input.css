@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .socialCard:hover .iconContainer {
+    right: 0 !important;
+  }
+}
+
+@layer components {
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+  .col-12 {
+    width: 100%;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .col-6 {
+    width: 50%;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .col-7 {
+    width: 58.33333333%;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .col-4 {
+    width: 33.33333333%;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .col-3 {
+    width: 25%;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
