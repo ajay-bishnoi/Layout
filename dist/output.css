@@ -550,30 +550,34 @@ video {
   width: 100%;
 }
 
-.socialCard:hover .iconContainer {
-  right: 0 !important;
+@media (min-width: 640px){
+  .container{
+    max-width: 640px;
+  }
 }
 
-.\!row {
-  display: flex !important;
-  flex-wrap: wrap !important;
-  flex-direction: row !important;
-  margin-left: -12px !important;
-  margin-right: -12px !important;
+@media (min-width: 768px){
+  .container{
+    max-width: 768px;
+  }
 }
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  margin-left: -12px;
-  margin-right: -12px;
+@media (min-width: 1024px){
+  .container{
+    max-width: 1024px;
+  }
 }
 
-.col-3 {
-  width: 25%;
-  padding-left: 12px;
-  padding-right: 12px;
+@media (min-width: 1280px){
+  .container{
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px){
+  .container{
+    max-width: 1536px;
+  }
 }
 
 .sr-only{
@@ -711,6 +715,11 @@ video {
   clear: none;
 }
 
+.-mx-3{
+  margin-left: -0.75rem;
+  margin-right: -0.75rem;
+}
+
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -726,6 +735,10 @@ video {
 
 .mt-3{
   margin-top: 0.75rem;
+}
+
+.mt-6{
+  margin-top: 1.5rem;
 }
 
 .box-border{
@@ -1951,6 +1964,11 @@ video {
   padding-right: 0.75rem;
 }
 
+.py-10{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
 .pb-\[15px\]{
   padding-bottom: 15px;
 }
@@ -2467,27 +2485,39 @@ video {
   forced-color-adjust: none;
 }
 
-@media (max-width: 992px){
-  .max_lg\:col-4 {
-    width: 33.33333333%;
-    padding-left: 12px;
-    padding-right: 12px;
-  }
-}
-
-@media (max-width: 768px){
-  .max_md\:col-6 {
-    width: 50%;
-    padding-left: 12px;
-    padding-right: 12px;
-  }
-}
-
-@media (max-width: 576px){
-  .max_sm\:col-12 {
+@media (min-width: 640px){
+  .sm\:container{
     width: 100%;
-    padding-left: 12px;
-    padding-right: 12px;
+  }
+
+  @media (min-width: 640px){
+    .sm\:container{
+      max-width: 640px;
+    }
+  }
+
+  @media (min-width: 768px){
+    .sm\:container{
+      max-width: 768px;
+    }
+  }
+
+  @media (min-width: 1024px){
+    .sm\:container{
+      max-width: 1024px;
+    }
+  }
+
+  @media (min-width: 1280px){
+    .sm\:container{
+      max-width: 1280px;
+    }
+  }
+
+  @media (min-width: 1536px){
+    .sm\:container{
+      max-width: 1536px;
+    }
   }
 }
 
@@ -2524,29 +2554,57 @@ video {
   text-align: center;
 }
 
-.group:hover .group-hover\:fill-white{
+.group:hover .group-hover\:end-0{
+  inset-inline-end: 0px;
+}
+
+.group\/icon:hover .group-hover\/icon\:fill-white{
   fill: #fff;
 }
 
-@media (max-width: 992px){
-  .max_lg\:mt-6{
-    margin-top: 1.5rem;
+@media (min-width: 640px){
+  .sm\:mt-0{
+    margin-top: 0px;
   }
 
-  .max_lg\:py-10{
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
+  .sm\:w-\[50\%\]{
+    width: 50%;
   }
-}
 
-@media (max-width: 768px){
-  .max_md\:mt-6{
-    margin-top: 1.5rem;
+  .sm\:underline{
+    text-decoration-line: underline;
   }
 }
 
-@media (max-width: 576px){
-  .max_sm\:mt-6{
-    margin-top: 1.5rem;
+@media (min-width: 768px){
+  .md\:mt-0{
+    margin-top: 0px;
+  }
+
+  .md\:w-\[33\.33\%\]{
+    width: 33.33%;
+  }
+}
+
+@media (min-width: 1024px){
+  .lg\:mt-0{
+    margin-top: 0px;
+  }
+
+  .lg\:w-\[25\%\]{
+    width: 25%;
+  }
+
+  .lg\:py-0{
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
+
+@media (prefers-color-scheme: dark){
+  @media (min-width: 1024px){
+    .dark\:lg\:hover\:\[paint-order\:markers\]:hover{
+      paint-order: markers;
+    }
   }
 }
